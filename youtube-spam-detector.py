@@ -3,8 +3,6 @@
 and value = Number of spam comments.
 2. Sort the hashMap from highest to lowest amount of spams.
 
-Youtube API Key : AIzaSyBLWKP2gVaGWj8W0aLM5D7rzozf7pCLX_4
-
 '''
 
 #!/usr/bin/python
