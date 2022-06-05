@@ -17,6 +17,7 @@ Youtube API Key : AIzaSyBLWKP2gVaGWj8W0aLM5D7rzozf7pCLX_4
 #       to find the correct place to provide that key..
 
 import argparse
+import os
 
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
@@ -26,7 +27,8 @@ from googleapiclient.errors import HttpError
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-DEVELOPER_KEY = 'AIzaSyBLWKP2gVaGWj8W0aLM5D7rzozf7pCLX_4'
+
+DEVELOPER_KEY = os.environ.get('API_KEY')
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
 
